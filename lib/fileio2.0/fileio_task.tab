@@ -1,0 +1,22 @@
+// file.tab for File IO application with VCS
+$fopena  check=fopen_check   call=fopen_call   misc=fopen_misc  size=32 data=1 acc=rw:%TASK
+$fopenr  check=fopen_check   call=fopen_call   misc=fopen_misc  size=32 data=2 acc=rw:%TASK
+$fopenw  check=fopen_check   call=fopen_call   misc=fopen_misc  size=32 data=3 acc=rw:%TASK
+$fclosea check=fclose_check  call=fclose_call                   size=32 data=1
+$fcloser check=fclose_check  call=fclose_call                   size=32 data=2
+$fclosew check=fclose_check  call=fclose_call                   size=32 data=3
+$fgets   check=fgets_check   call=fgets_call                    size=1  acc=rw:%TASK
+$gets    check=gets_check    call=gets_call                     size=1  acc=rw:%TASK
+$fgetc   check=fgetc_check   call=fgetc_call                    size=32 acc=rw:%TASK
+$getchar check=getchar_check call=getchar_call                  size=32 acc=rw:%TASK
+$ungetc  check=ungetc_check  call=ungetc_call                   size=32
+$feof    check=feof_check    call=feof_call                     size=32
+$ferror  check=ferror_check  call=ferror_call                   size=32
+$fscanf  check=fscanf_check  call=fscanf_call  misc=fscanf_misc         acc=rw:%TASK
+$sscanf  check=sscanf_check  call=sscanf_call  misc=sscanf_misc         acc=rw:%TASK
+$scanf   check=scanf_check   call=scanf_call   misc=scanf_misc          acc=rw:%TASK
+$ftell   check=ftell_check   call=ftell_call                    size=32
+$fseek   check=fseek_check   call=fseek_call                    size=32
+$fread   check=fread_check   call=fread_call                    size=32 acc=rw:%TASK 
+$sprintf check=sprintf_check call=sprintf_call misc=sprintf_misc size=32 acc=rw:%TASK
+$fprintf check=fprintf_check call=fprintf_call misc=fprintf_misc size=32 acc=rw:%TASK
